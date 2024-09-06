@@ -22,4 +22,9 @@ io.on('connection', socket => {
     })
 })
 
+
+app.get('/', (req,res)=>{
+    return res.json('Server On')
+})
+
 server.listen(PORT, ()=> console.log('Server running in PORT: ', PORT))
